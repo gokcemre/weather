@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+    <div class="header">
+        <h1>Hava Durumu Uygulaması</h1>
+        <input type="text" id="searchInput" placeholder="Sehir ismi Giriniz..."><br>
+        <button id="searchBtn" type="button">Ara</button>
+    </div>
+    <div class="content">
+        <div id="icon"></div>
+        <div id="city">İstanbul</div>
+        <div id="temp">25°C</div>
+        <div id="desc">Parçalı Bulutlu</div>
+        <div id="minmax">19°C / 28°C</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+<script>
+    VANTA.CLOUDS({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      backgroundColor: 0xf7f7f7,
+      skyColor: 0x71aeff,
+      cloudColor: 0xc5c5c5,
+      sunColor: 0xff5600,
+      sunGlareColor: 0xeb5a5a,
+      sunlightColor: 0xfcae6d,
+      speed: 0.90
+    })
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
